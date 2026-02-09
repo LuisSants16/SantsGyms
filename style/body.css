@@ -1,0 +1,43 @@
+:root{
+    --primary-color:#e31c25;
+    --primary-font:#e31c25;
+    --secondary-font:#fc5c2e;
+    --tertiary-font:#fc9a3f;
+
+    --gradient-color:linear-gradient(
+        90deg,
+        rgba(180, 58, 58, 1) 0%,
+        rgba(253, 29, 29, 1) 50%,
+        rgba(252, 176, 69, 1) 100%
+    );
+
+    --dark-color:#000;
+    --dark-font:#000;
+    --light-color:#ccc;
+    --light-font:#ccc;
+
+    --overlay-light:#ffffff18;
+
+    --max-width:1250px;
+    --font-size:1rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: "Roboto";
+  background-color: #fff;
+  color: var(--dark-font);
+}
+
+section{
+  scroll-margin-top: 50px;
+}

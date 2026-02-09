@@ -1,0 +1,122 @@
+.container_banner{
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.container_banner::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.content_banner{
+  z-index: 1;
+  text-align: center;
+  color: var(--light-font);
+
+  max-width: var(--max-width);
+  padding: 0 20px;
+}
+
+/* Textos */
+.title_banner{
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.subtitle_banner{
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+.paragraph_banner{
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* Botón */
+.button_banner{
+  display: inline-block;
+  text-decoration: none;
+  color: var(--light-font);
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border: 2px solid var(--primary-color);
+  padding: 12px 28px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.button_banner:hover{
+  background-color: var(--primary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(227, 28, 37, 0.4);
+}
+
+/* ---------- BANNER TABLET ---------- */
+@media (max-width: 1024px){
+
+  .subtitle_banner{
+    font-size: 2.8rem;
+  }
+}
+
+/* ---------- BANNER MOBILE ---------- */
+@media (max-width: 768px){
+
+  .container_banner{
+    background-attachment: scroll; /* FIX mobile */
+  }
+
+  .title_banner{
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+  }
+
+  .subtitle_banner{
+    font-size: 2.2rem;
+  }
+
+  .paragraph_banner{
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+  }
+
+  .button_banner{
+    font-size: 0.95rem;
+    padding: 10px 24px;
+  }
+}
+
+/* ---------- MOBILE PEQUEÑO ---------- */
+@media (max-width: 480px){
+
+  .subtitle_banner{
+    font-size: 1.8rem;
+  }
+
+  .paragraph_banner{
+    font-size: 0.9rem;
+  }
+
+  .button_banner{
+    padding: 10px 22px;
+  }
+}

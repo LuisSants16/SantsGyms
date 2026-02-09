@@ -1,0 +1,143 @@
+.container_header{
+  background-color: transparent;
+  padding: 15px 0;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.3s ease;
+
+  backdrop-filter: blur(10px);
+}
+
+.container_header.scrolled{
+  background-color: rgba(0, 0, 0, 0.85);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+.content_header{
+  max-width: var(--max-width);
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 20px;
+  color: white;
+}
+
+/* Logo */
+.logo_header{
+  font-weight: 800;
+  font-size: 1rem;
+
+  background: var(--gradient-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ---------- ICONO HAMBURGUESA ---------- */
+.menu_toggle{
+  display: none;
+  font-size: 1.6rem;
+  color: white;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Menu */
+.menu_header{
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Links */
+.link_menu{
+  position: relative;
+  text-decoration: none;
+  color: var(--light-font);
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+/* Hover con subrayado animado */
+.link_menu::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.link_menu:hover{
+  color: var(--primary-color);
+}
+
+.link_menu:hover::after{
+  width: 100%;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px){
+
+  .container_header{
+    padding: 12px 0;
+  }
+
+  .logo_header{
+    font-size: 1.1rem; /* antes era grande */
+  }
+
+  .content_header{
+    padding: 0 16px;
+  }
+
+  .menu_toggle{
+    display: block;
+  }
+
+  .menu_header{
+    position: fixed;
+    top: 0;
+    right: -100%;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.95);
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    transition: right 0.4s ease;
+  }
+
+  .menu_header.active{
+    right: 0;
+  }
+
+  .link_menu{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px){
+
+  .logo_header{
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+}

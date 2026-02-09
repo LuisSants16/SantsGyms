@@ -1,0 +1,155 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan Personalizado | SantsGyms</title>
+    <link rel="stylesheet" href="../style/body.css" />
+    <link rel="stylesheet" href="../plan/plan.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="top-header">
+      <nav class="nav-container">
+
+        <a href="../index.html" class="logo">GymSants</a>
+
+        <ul class="nav-links"></ul>
+
+        <a href="#" class="btn-nav">Elegir Plan</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>
+          Crea <span class="hero-gradient">hábitos fuertes</span><br />
+          y entrena con <span class="hero-gradient">propósito</span>
+        </h1>
+
+        <button class="btn-hero" id="startPlanBtn" type="button">
+          Prueba Gratis
+        </button>
+
+        <p class="hero-subtext">
+          Diseña tu plan ideal según tu cuerpo y objetivos
+        </p>
+      </div>
+    </section>
+
+    <section class="wizard" id="wizard" style="display: none">
+      <div class="wizard-card">
+        <button class="close-wizard" id="closeWizardBtn">✕</button>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <h2 class="wizard-title" id="questionTitle"></h2>
+        <p class="wizard-desc" id="questionDesc"></p>
+
+        <div class="wizard-options" id="questionContent"></div>
+
+        <div class="wizard-actions">
+          <button class="btn-soft" id="backBtn" type="button">Atrás</button>
+          <button class="btn-dark" id="nextBtn" type="button">Siguiente</button>
+        </div>
+      </div>
+
+      <div class="loading-plan" id="loadingPlan" style="display: none">
+        <div class="loading-card">
+          <div class="spinner"></div>
+          <p>Estamos creando tu plan personalizado…</p>
+        </div>
+      </div>
+
+      <!-- RESULTADO FINAL -->
+      <div class="wizard-result" id="result" style="display: none">
+        <div class="result-header">
+          <h2>Tu plan GymSants</h2>
+
+          <div class="result-actions">
+            <button class="btn-reset" id="resetPlanBtn" type="button">
+              Reiniciar
+            </button>
+
+            <button class="result-close" id="closeResultBtn" type="button">
+              ✕
+            </button>
+          </div>
+        </div>
+
+        <div id="summaryBox"></div>
+        <div id="nutritionBox"></div>
+        <div id="routineBox"></div>
+      </div>
+    </section>
+
+    <!-- MODAL PLANES -->
+    <div class="plans-modal" id="plansModal">
+      <div class="plans-overlay" id="closePlans"></div>
+
+      <div class="plans-box">
+        <button class="plans-close" id="closePlansBtn">✕</button>
+
+        <h2 class="plans-title">Elige tu plan</h2>
+
+        <div class="plans-grid">
+          <!-- GRATIS -->
+          <div class="plan-card">
+            <h3>Gratis</h3>
+            <p class="price">S/ 0</p>
+            <ul>
+              <li>Plan personalizado</li>
+              <li>Rutina básica</li>
+              <li>Recomendación de comidas</li>
+            </ul>
+            <button class="plan-btn">Comenzar</button>
+          </div>
+
+          <!-- BÁSICO -->
+          <div class="plan-card">
+            <h3>Básico</h3>
+            <p class="price">S/ 19.99</p>
+            <ul>
+              <li>Todo lo gratis</li>
+              <li>Rutina avanzada</li>
+              <li>Más opciones de comidas</li>
+            </ul>
+            <button class="plan-btn">Elegir</button>
+          </div>
+
+          <!-- MEDIO -->
+          <div class="plan-card">
+            <h3>Medio</h3>
+            <p class="price">S/ 49.99</p>
+            <ul>
+              <li>Todo lo básico</li>
+              <li>Seguimiento semanal</li>
+              <li>Ajustes automáticos</li>
+            </ul>
+            <button class="plan-btn">Elegir</button>
+          </div>
+
+          <!-- EXPERTO -->
+          <div class="plan-card">
+            <h3>Experto</h3>
+            <p class="price">S/ 199.99</p>
+            <ul>
+              <li>Acceso completo</li>
+              <li>Rutinas pro</li>
+              <li>Soporte premium</li>
+            </ul>
+            <button class="plan-btn">Elegir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../plan/plan.js"></script>
+  </body>
+</html>

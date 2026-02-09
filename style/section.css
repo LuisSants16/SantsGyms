@@ -1,0 +1,1210 @@
+/* ---------- ABOUT ---------- */
+.container_about {
+  max-width: var(--max-width);
+  margin: auto;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  border-radius: 20px;
+  align-items: center;
+  padding: 50px;
+  margin-top: 60px;
+}
+
+/* ---------- TITLE DENTRO DEL GRID ---------- */
+.section_title {
+  grid-column: 1 / -1; /* ocupa las 2 columnas */
+  text-align: center;
+}
+
+/* Label */
+.section_label {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+/* Heading */
+.section_heading {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #111;
+  line-height: 1.3;
+}
+
+.section_heading span {
+  background: var(--gradient-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Línea */
+.section_line {
+  width: 80px;
+  height: 4px;
+  margin: 25px auto 0;
+
+  background: var(--gradient-color);
+  border-radius: 10px;
+}
+
+/* Imagen */
+.img_about img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  border-radius: 10px;
+
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s ease;
+}
+
+/* Info Card */
+.info_about {
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Título */
+.title_about {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #111;
+}
+
+/* Párrafo */
+.paragraph_about {
+  line-height: 1.7;
+  color: #666;
+}
+
+/* Features */
+.features_about {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Feature Card */
+.feature {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.feature:hover {
+  background-color: #f5f5f5;
+  transform: translateX(5px);
+}
+
+/* Icono */
+.feature i {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  margin-top: 5px;
+}
+
+/* Texto */
+.feature_text h3 {
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.feature_text p {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Botón */
+.button_about {
+  display: inline-block;
+  margin-top: 10px;
+
+  text-decoration: none;
+  color: white;
+  background: var(--gradient-color);
+
+  padding: 14px 28px;
+  border-radius: 50px;
+
+  font-weight: bold;
+  letter-spacing: 0.5px;
+
+  box-shadow: 0 10px 25px rgba(227, 28, 37, 0.35);
+  transition: all 0.3s ease;
+}
+
+.button_about:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(227, 28, 37, 0.45);
+}
+
+/* ---------- FOCUS SECTION ---------- */
+.focus_section {
+  background-color: var(--dark-color);
+  margin-top: 120px;
+}
+
+/* Container */
+.focus_container {
+  max-width: var(--max-width);
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Card base */
+.focus_card {
+  padding: 60px 40px;
+  color: var(--light-font);
+
+  background-color: #050505;
+  transition: all 0.3s ease;
+}
+
+/* Card destacada */
+.focus_card.active {
+  background: var(--gradient-color);
+}
+
+/* Iconos */
+.focus_card i {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+/* Icono activo */
+.focus_card.active i {
+  color: white;
+}
+
+/* Títulos */
+.focus_card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+/* Texto */
+.focus_card p {
+  color: #bbb;
+  line-height: 1.6;
+}
+
+.focus_card.active p {
+  color: white;
+}
+
+.focus_card.active:hover {
+  filter: brightness(1.1);
+}
+
+/* ---------- SERVICES ---------- */
+.services_section {
+  padding: 120px 20px;
+  background-color: #f9f9f9;
+}
+
+/* GRID */
+.services_container {
+  max-width: var(--max-width);
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 60px;
+  padding-top: 50px;
+}
+
+/* BOX (ahora se ve pro) */
+.service_box {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 16px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.service_box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+/* Imagen */
+.service_img {
+  position: relative;
+  width: 220px;
+  flex-shrink: 0;
+
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.service_img img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+.service_box:hover .service_img img {
+  transform: scale(1.08);
+}
+
+/* Icono flotante (más premium) */
+.service_icon {
+  position: absolute;
+  top: -12px;
+  left: -12px;
+
+  width: 58px;
+  height: 58px;
+
+  background: var(--gradient-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(227, 28, 37, 0.35);
+}
+
+.service_icon i {
+  color: white;
+  font-size: 1.3rem;
+}
+
+/* Info */
+.service_info h3 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.service_info p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* ---------- BMI SECTION ---------- */
+.bmi_section {
+  min-height: 100vh; /* 🔥 ocupa toda la pantalla */
+  display: flex;
+  align-items: center; /* centra vertical */
+  padding: 120px 20px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)),
+    url("../img/bmi.jpg") center / cover no-repeat;
+}
+
+.bmi_container {
+  max-width: var(--max-width);
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* INFO */
+.bmi_info {
+  color: #fff;
+}
+
+.bmi_tag {
+  color: var(--primary-color);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.bmi_info h2 {
+  font-size: 3rem;
+  margin: 15px 0;
+}
+
+.bmi_info p {
+  max-width: 500px;
+  line-height: 1.7;
+  color: #ddd;
+}
+
+/* FORM BOX */
+.bmi_box {
+  background: rgba(20, 20, 20, 0.95);
+  padding: 40px;
+  border-radius: 18px;
+  color: #fff;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.bmi_box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+}
+
+/* INPUTS */
+.bmi_inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.bmi_inputs input,
+.bmi_inputs select {
+  padding: 14px;
+  background: #2a2f36;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.bmi_inputs input::placeholder {
+  color: #aaa;
+}
+
+.bmi_inputs select {
+  color: #aaa;
+}
+
+.bmi_inputs select option {
+  color: #fff;
+}
+
+/* RESULTADO */
+.bmi_resultado {
+  margin-top: 20px;
+  line-height: 1.6;
+  color: #ddd;
+  font-weight: 600;
+
+  opacity: 0;
+  transform: translateY(10px);
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
+}
+
+.bmi_resultado.activo {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================= */
+/* BOTONES (MISMO MODELO NOSOTROS) */
+/* ============================= */
+
+/* BOTÓN CALCULAR */
+.btn-imc {
+  display: inline-block;
+  margin-top: 10px;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  background: var(--gradient-color);
+  border: none;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  box-shadow: 0 10px 25px rgba(227, 28, 37, 0.35);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* BOTÓN LIMPIAR */
+.btn_clear {
+  display: inline-block;
+  margin-top: 10px;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  background: var(--gradient-color);
+  border: none;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  box-shadow: 0 10px 25px rgba(227, 28, 37, 0.35);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-imc:hover,
+.btn_clear:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(227, 28, 37, 0.45);
+}
+
+/* BOTÓN PLAN (el flotante que ya tenías) */
+.btn_plan {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 42px;
+  margin-top: 25px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 40px;
+  background: linear-gradient(120deg, var(--primary-color), #ff3b3b);
+  box-shadow: 0 12px 35px rgba(255, 0, 0, 0.45);
+}
+
+/* ============================= */
+/* ===== TRAINERS SECTION ====== */
+/* ============================= */
+
+.trainers_section {
+  padding: 120px 20px;
+  background: #f9f9f9;
+}
+
+/* ===== TITULOS ===== */
+
+.trainers_titles {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.trainers_titles span {
+  color: var(--primary-color);
+  font-weight: 700;
+  letter-spacing: 4px;
+  font-size: 0.8rem;
+}
+
+.trainers_titles h2 {
+  font-size: 2.6rem;
+  margin-top: 12px;
+  font-weight: 800;
+  color: #111;
+}
+
+/* Texto degradado palabra clave */
+.trainers_titles h2 strong {
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-font)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Línea decorativa */
+.line_title {
+  width: 80px;
+  height: 4px;
+  margin: 18px auto 0;
+
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-font)
+  );
+
+  border-radius: 10px;
+}
+
+/* ===== CONTENEDOR GRID ===== */
+
+.trainers_container {
+  max-width: var(--max-width);
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* ===== CARD ===== */
+
+.trainer_card {
+  background: #000;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: 0.4s ease;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.trainer_card:hover {
+  transform: translateY(-8px);
+}
+
+/* ===== IMAGEN ===== */
+
+.trainer_img {
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+}
+
+.trainer_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== SOCIAL HOVER ===== */
+
+.trainer_social {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.trainer_card:hover .trainer_social {
+  opacity: 1;
+}
+
+/* ICONOS */
+
+.trainer_social i {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.trainer_social i:hover {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* ===== INFO ===== */
+
+.trainer_info {
+  padding: 22px;
+  text-align: center;
+}
+
+.trainer_info h3 {
+  color: var(--primary-color);
+  margin-bottom: 6px;
+  font-size: 1.1rem;
+}
+
+.trainer_info p {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.testimonios_section {
+  padding: 120px 20px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("../img/testimonio.jpg") center / cover no-repeat;
+}
+
+.testimonios_container {
+  max-width: var(--max-width);
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* ===== IZQUIERDA ===== */
+
+.testimonio_box {
+  background: #111;
+  padding: 60px;
+  color: #fff;
+  position: relative;
+}
+
+.testimonios_slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonio_item {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.testimonio_item.active {
+  display: block;
+  opacity: 1;
+}
+
+@keyframes fadeTestimonio {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Cliente */
+
+.cliente_info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.cliente_info img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary-color);
+}
+
+.cliente_info h4 {
+  color: var(--primary-color);
+  margin-bottom: 3px;
+}
+
+.cliente_info span {
+  font-size: 0.85rem;
+  color: #bbb;
+}
+
+/* Texto */
+
+.testimonio_texto {
+  background: #2a2f36;
+  padding: 25px;
+  border-radius: 6px;
+  position: relative;
+}
+
+.testimonio_texto::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 40px;
+
+  width: 20px;
+  height: 20px;
+  background: #2a2f36;
+  transform: rotate(45deg);
+}
+
+.testimonio_texto p {
+  line-height: 1.7;
+  color: #ddd;
+}
+
+/* Dots */
+
+.dot {
+  width: 28px;
+  height: 4px;
+  background: #555;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dot:hover {
+  background: var(--primary-color);
+  opacity: 0.7;
+}
+
+.dot.active {
+  background: var(--primary-color);
+  width: 35px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+}
+
+.testimonio_dots {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+/* ===== DERECHA ===== */
+
+.testimonio_info {
+  background: #00000077;
+
+  padding: 80px 60px;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tag_testimonio {
+  color: var(--primary-color);
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.testimonio_info h2 {
+  font-size: 2.6rem;
+  margin-bottom: 20px;
+}
+
+.testimonio_info h2 strong {
+  color: var(--primary-color);
+}
+
+.testimonio_info p {
+  max-width: 480px;
+  line-height: 1.7;
+  color: #ddd;
+}
+
+/* ---------- TABLET ---------- */
+@media (max-width: 1024px) {
+  .container_about {
+    gap: 30px;
+  }
+
+  .title_about {
+    font-size: 1.8rem;
+  }
+
+  .focus_container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .focus_card {
+    padding: 50px 30px;
+  }
+
+  .services_section {
+    padding: 50px 10px 0 10px;
+  }
+
+  .services_container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-top: 20px;
+  }
+
+  .bmi_container {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .bmi_info h2 {
+    font-size: 2.2rem;
+  }
+
+  .bmi_info p {
+    font-size: 0.95rem;
+  }
+
+  .bmi_box {
+    padding: 30px;
+  }
+
+  .trainers_section {
+    padding: 50px 10px 0 10px;
+  }
+
+  .trainers_container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .trainers_titles h2 {
+    font-size: 2.2rem;
+  }
+
+  .trainer_img {
+    height: 240px;
+  }
+
+  .testimonio_box {
+    padding: 50px 40px;
+  }
+
+  .testimonio_info {
+    padding: 60px 40px;
+  }
+
+  .testimonio_info h2 {
+    font-size: 2.2rem;
+  }
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 768px) {
+  .container_about {
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+  }
+
+  .section_heading {
+    font-size: 1.9rem;
+  }
+
+  .section_title {
+    margin-bottom: 10px;
+  }
+
+  .img_about {
+    order: -1;
+  }
+
+  .info_about {
+    padding: 10px;
+  }
+
+  .paragraph_about {
+    margin: auto;
+  }
+
+  .feature {
+    justify-content: center;
+    text-align: left;
+  }
+
+  .focus_section {
+    margin-top: 40px;
+  }
+
+  .focus_container {
+    grid-template-columns: 1fr;
+    margin-top: 0;
+  }
+
+  .focus_card {
+    text-align: center;
+    padding: 40px 25px;
+  }
+
+  .focus_card i {
+    font-size: 2.2rem;
+  }
+
+  .focus_card h3 {
+    font-size: 1.4rem;
+  }
+
+  .services_container {
+    gap: 10px;
+  }
+
+  .service_box {
+    flex-direction: column;
+    text-align: center;
+    padding: 22px;
+  }
+
+  .service_img {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .service_icon {
+    top: 10px;
+    left: 10px;
+  }
+
+  .bmi_section {
+    min-height: auto;
+    padding: 80px 20px;
+  }
+
+  .bmi_container {
+    grid-template-columns: 1fr; /* 🔥 BAJA A 1 COLUMNA */
+    text-align: center;
+  }
+
+  .bmi_info {
+    order: 1;
+  }
+
+  .bmi_box {
+    order: 2;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .bmi_info p {
+    margin: auto;
+    margin-bottom: 25px;
+  }
+
+  .btn_plan {
+    margin: auto;
+  }
+
+  .trainers_section {
+    padding: 60px 20px;
+  }
+
+  .trainers_container {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+  }
+
+  .trainers_titles {
+    margin-bottom: 50px;
+  }
+
+  .trainers_titles h2 {
+    font-size: 1.9rem;
+    line-height: 1.3;
+  }
+
+  .trainer_img {
+    height: 260px;
+  }
+
+  /* CONTENEDOR GENERAL (si usas grid 2 columnas) */
+  .testimonios_container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  /* IZQUIERDA */
+  .testimonio_box {
+    padding: 40px 30px;
+  }
+
+  .cliente_info img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .testimonio_texto {
+    padding: 20px;
+  }
+
+  /* DERECHA */
+  .testimonio_info {
+    padding: 50px 30px;
+    text-align: center;
+  }
+
+  .testimonio_info h2 {
+    font-size: 2rem;
+  }
+
+  .testimonio_info p {
+    margin: auto;
+  }
+}
+
+/* ---------- MOBILE PEQUEÑO ---------- */
+@media (max-width: 480px) {
+  .title_about {
+    font-size: 1.6rem;
+  }
+
+  .feature i {
+    font-size: 1.5rem;
+  }
+
+  .focus_card {
+    padding: 35px 20px;
+  }
+
+  .focus_card h3 {
+    font-size: 1.2rem;
+  }
+
+  .focus_card p {
+    font-size: 0.9rem;
+  }
+
+  .service_info h3 {
+    font-size: 1.1rem;
+  }
+
+  .service_info p {
+    font-size: 0.9rem;
+  }
+
+  .bmi_section {
+    padding: 70px 15px;
+  }
+
+  .bmi_container {
+    gap: 30px;
+  }
+
+  /* TEXTOS */
+  .bmi_tag {
+    font-size: 0.8rem;
+  }
+
+  .bmi_info h2 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  .bmi_info p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  /* FORM */
+  .bmi_box {
+    padding: 25px 20px;
+    border-radius: 15px;
+  }
+
+  .bmi_box h3 {
+    font-size: 1.3rem;
+  }
+
+  /* INPUTS A 1 COLUMNA */
+  .bmi_inputs {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .bmi_inputs input,
+  .bmi_inputs select {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+
+  /* BOTONES */
+  .btn-imc,
+  .btn_clear {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+
+  /* BOTÓN PLAN */
+  .btn_plan {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 14px;
+  }
+
+  /* RESULTADO */
+  .bmi_resultado {
+    font-size: 0.9rem;
+  }
+
+  .trainers_titles span {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+  }
+
+  .trainers_titles h2 {
+    font-size: 1.6rem;
+  }
+
+  .line_title {
+    width: 60px;
+    height: 3px;
+  }
+
+  .trainers_container {
+    max-width: 100%;
+    gap: 20px;
+  }
+
+  .trainer_img {
+    height: 230px;
+  }
+
+  .trainer_info h3 {
+    font-size: 1rem;
+  }
+
+  .trainer_info p {
+    font-size: 0.85rem;
+  }
+
+  /* BOX */
+  .testimonio_box {
+    padding: 30px 20px;
+  }
+
+  /* Cliente */
+  .cliente_info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cliente_info img {
+    width: 55px;
+    height: 55px;
+  }
+
+  /* Texto */
+  .testimonio_texto {
+    padding: 18px;
+    font-size: 0.9rem;
+  }
+
+  .testimonio_texto::before {
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+
+  /* Dots centrados */
+  .testimonio_dots {
+    justify-content: center;
+  }
+
+  /* Derecha */
+  .testimonio_info {
+    padding: 40px 20px;
+  }
+
+  .testimonio_info h2 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  .tag_testimonio {
+    font-size: 0.75rem;
+  }
+}
