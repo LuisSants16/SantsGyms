@@ -41,3 +41,14 @@ body{
 section{
   scroll-margin-top: 50px;
 }
+
+/* Clases de color reutilizables */
+.primaryFont{
+  color: var(--primary-font);
+}
+.secondaryFont{
+  color: var(--secondary-font);
+}
+.tertiaryFont{
+  color: var(--tertiary-font);
+}
